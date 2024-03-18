@@ -1,0 +1,20 @@
+.aside {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        background: #333;
+        a{
+            padding: 1rem;
+            font-size: 1.2rem;
+            color: #fff;
+            text-decoration: none;
+            transition: .5s;
+            &:hover {
+                border-bottom: 1px solid #fff;
+                color: #f7f738;
+            }
+        }
+    }
+}

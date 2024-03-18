@@ -1,0 +1,24 @@
+
+.grid__layout {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr 2fr 2fr;
+    grid-template-areas:
+        "toolbar toolbar toolbar toolbar"
+        "aside main main main "
+        "aside main main main "
+        "aside main main main ";
+}
+
+.grid__div-1 {
+    grid-area: toolbar;
+    width: 100%;
+    background-color: #333;
+}
+.grid__div-2 {
+    grid-area: main;
+}
+.grid__div-3 {
+    background: #333;
+    grid-area: aside;
+    min-height: 100vh;
+}

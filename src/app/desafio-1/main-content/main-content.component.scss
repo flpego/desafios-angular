@@ -1,0 +1,86 @@
+main {
+    h1 {
+        text-align: center;
+    }
+}
+
+.forms__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin: 0 auto;
+
+
+    form {
+        input {
+            background-color: #f7f77e;
+            padding: 0.3rem 0.7rem;
+            background-color: #f7f77e;
+            border: none;
+            transition: 0.3s;
+            border-right: 1px solid #7e7e7e;
+            border-radius: 5px 0 0 5px;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                background: #7e7e7e;
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+        button {
+            padding: 0.3rem 0.7rem;
+            border: none;
+            transition: 0.3s;
+            border-radius: 0 5px 5px 0;
+            background-color: #f7f738;
+            &:hover {
+                background: #7e7e7e;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+.filter__form {
+    width: 250px;
+    div{
+        width: 100%;
+    }
+    select {
+        padding: 0.3rem 0.7rem;
+        border: 1px solid #f7f738;
+        background-color: #f7f738;
+        width: 50%;
+        margin-right: 10px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.client__list {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+}
+
+.client__card {
+    padding-inline-start: 1rem;
+    border-radius: 16px;
+    box-shadow: 1px 1px 10px #333;
+    transition: .3s;
+    &:hover{
+        background-color: #f7f77e;
+
+    }
+}
+
+.span__bolder {
+    font-weight: 600;
+}
